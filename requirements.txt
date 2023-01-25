@@ -1,7 +1,8 @@
 dash==2.7.1
 dash_bootstrap_components==1.2.1
 dash_bootstrap_templates==1.0.7
-numpy==1.23.5
+geopandas==0.10.2
+numpy==1.21.6
 pandas==1.5.2
 plotly==5.11.0
 researchpy==0.3.5
