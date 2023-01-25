@@ -15,4 +15,4 @@ The main content of the dashboard is divided into three parts, each with one pag
 In summary, the project provides a data story telling platform, and the dashboard help bring the story to life.  
 The image below depicts the outline and workflow of the whole project, as well as the basic components of the dashboard structure.
 
-<img src="dataset_download_and_EDA/images_dashboard/Picture10_3.png" height="200"/>
+<img src="dataset_download_and_EDA/images_dashboard/Picture10_3.png" width="500"/>
