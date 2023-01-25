@@ -80,8 +80,8 @@ layout = dbc.Container([
                           additional geographic information (approximate longitude and latitude) for each sale record, which can be utilized to reveal how geographic 
                           locations affect house sale prices.
                           \nThe dataset used in this dashboard has been further processed, which mainly involves new feature generation and outlier data removal. Refer to 
-                          **AmesHousing_R_Package_EDA_with_plotly** (.ipynb file) for full details.
-                          \nIf you are interested in dataset downloading from scratch, refer to file **AmesHousing_dataset.html**, where details can be found for how to import this package in
+                          **[AmesHousing_R_Package_EDA_with_plotly](https://github.com/ZNL0504/AmesHousing-Interactive-EDA-app/blob/main/dataset_download_and_EDA/AmesHousing_R_Package_EDA_with_Plotly.ipynb)** (.ipynb file) for full details.
+                          \nIf you are interested in dataset downloading from scratch, refer to file **[AmesHousing_dataset.Rmd](https://github.com/ZNL0504/AmesHousing-Interactive-EDA-app/blob/main/dataset_download_and_EDA/AmesHousing_dataset_download.Rmd)** (R markdown file), where details can be found for how to import this package in
                           RStudio/R and save it as .csv file.
                           \n**Package Reference:**
                           \n- [package reference manual](https://cran.r-project.org/web/packages/AmesHousing/AmesHousing.pdf)\n- **Source:**  \nDe Cock, D. (2011). "Ames, Iowa: Alternative to 
