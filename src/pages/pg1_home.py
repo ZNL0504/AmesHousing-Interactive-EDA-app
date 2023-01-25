@@ -108,7 +108,8 @@ layout = dbc.Container([
                 dbc.ModalBody([
                     dcc.Markdown([
                         '''This dashboard is an extension of data science project: **[House Price Prediction – Comprehensive Data Science Project](https://github.com/ZNL0504/House-Price-Prediction)**.
-                          The goal of this dashboard is to interactively visualize data, interpret analytical results, and extract data insights in a very flexible and intuitive approach. 
+                          The goal of this dashboard is to interactively visualize data, interpret analytical results, and extract data insights in a very flexible and intuitive approach.
+                          \n**[All source code for this dashboard](https://github.com/ZNL0504/AmesHousing-Interactive-EDA-app)** can be viewd on GitHub.
                           \nThe main content of the dashboard is divided into three parts, each with one page.\n- The first part is house sale overview, where trend and pattern over time is shown in terms of sale volumn, gross 
                           sale and mean sale price.\n- The second part focuses on dataset exploration and statistical inference to provide evidence of most important house price predictors and reveal relationship among different
                           variables.\n- It ends with geospatial data analysis to show how locations can impact house sale price and relate to other features in the dataset.
