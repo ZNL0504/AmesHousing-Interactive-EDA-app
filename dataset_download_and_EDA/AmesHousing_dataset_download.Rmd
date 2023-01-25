@@ -1,0 +1,104 @@
+---
+title: "AmesHousing dataset"
+author: "Zhinan Li"
+date: "2023-01-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## AmesHousing R package
+
+This package contains dataset same as Kaggle competition dataset **[House Prices - Advanced Regression Technique](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)**.  
+
+This package also includes processed version of the original Kaggle data with feature renaming, data imputation, feature dropping, and most importantly, additional geographic information (approximate longitude and latitude), which can be utilized as a complement to the Kaggle dataset in Exploratory Data Analysis to show how geographic locations affect house sale prices.
+
+The goal here is to load AmesHousing package, read in processed version of AmesHousing data, implement data wrangling as needed, and then download the processed data as .csv file for further analysis with either R or Python.
+
+```{r update R version, eval=FALSE, include=FALSE}
+# install.packages('installr')
+# library(installr)
+# updateR()
+```
+
+### Package information
+- [package reference manual](https://cran.r-project.org/web/packages/AmesHousing/AmesHousing.pdf) 
+- **Source:**  
+De Cock, D. (2011). "Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester
+Regression Project," Journal of Statistics Education, Volume 19, Number 3.  
+  - [data documentation](https://ww2.amstat.org/publications/jse/v19n3/decock/DataDocumentation.txt)      
+  - [link to the article](http://ww2.amstat.org/publications/jse/v19n3/decock.pdf)
+
+### Load packages
+
+```{r install packages as needed, eval=FALSE, include=FALSE}
+# install.packages('AmesHousing')
+# install.packages('geojsonsf') do not need
+# install.packages('sf') # simple features R package
+```
+
+```{r load packages, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(AmesHousing)
+library(jsonlite) # to save list as .json file
+library(sf) # write sf objects to geojson files
+```
+
+### Load AmesHousing dataset
+
+```{r load dataset ames_raw}
+# raw data without preprocessing
+ames_original <- ames_raw
+glimpse(ames_original)
+# str(ames_original)
+```
+
+```{r load dataset ames_schools_geo}
+# name of local schools and location info (latitude and longtitude)
+# used in map plotting to show ames local school locations
+ames_schools_geo
+```
+
+```{r load dataset ames_school_districts_sf and save as geojson file}
+# load dataset ames_school_districts_sf (simple feartures data) and save as geojson file, this data will be used in map plotting to show school districts
+ames_school_dist_sf <- ames_school_districts_sf
+# st_write(obj = ames_school_dist_sf, dsn = 'ames_school_dist_geojson.geojson')
+```
+
+```{r load dataset proccessed version of ames data}
+# load dataset proccessed version of ames data
+ames <- make_ames()
+dim(ames)
+
+# check if there is NA data in each column
+colSums(is.na(ames)) %>% as.data.frame()
+```
+
+```{r load ordinal version}
+# load ordinal version: same as make_ames but factor (ordinal) variables were changed to class ordered
+ames_ord <- make_ordinal_ames()
+```
+
+```{r save some datasets as .csv files}
+### save some datasets as .csv files
+# write_csv(ames_original, 'ames_raw.csv')
+# write_csv(ames, 'ames_processed.csv')
+# write_csv(ames_schools_geo, 'ames_schools_geo.csv')
+```
+
+### get levels of all ordinal features
+
+```{r get levels of ordinal features and save as .json file}
+### get levels of ordinal features and save as .json file
+ord_feat_levels <- lapply(ames_ord[sapply(ames_ord, is.ordered)], levels)
+# write_json(ord_feat_levels, "ord_feat_levels.json")
+```
+
+### package version information
+
+```{r}
+sessionInfo()
+```
+
