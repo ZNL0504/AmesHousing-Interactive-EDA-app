@@ -1,0 +1,703 @@
+NAME: AmesHousing.txt
+TYPE: Population
+SIZE: 2930 observations, 82 variables
+ARTICLE TITLE: Ames Iowa: Alternative to the Boston Housing Data Set
+
+DESCRIPTIVE ABSTRACT: Data set contains information from the Ames Assessor’s Office used in computing assessed values for individual residential properties sold in Ames, IA from 2006 to 2010.
+
+SOURCES: 
+Ames, Iowa Assessor’s Office 
+
+VARIABLE DESCRIPTIONS:
+Tab characters are used to separate variables in the data file. The data has 82 columns which include 23 nominal, 23 ordinal, 14 discrete, and 20 continuous variables (and 2 additional observation identifiers).
+
+Order (Discrete): Observation number
+
+PID (Nominal): Parcel identification number  - can be used with city web site for parcel review.
+
+Sale_Price (Continuous): Sale price $$
+
+	 value range: min: 12789, max: 625000
+
+MS_SubClass (Nominal): Identifies the type of dwelling involved in the sale.
+
+	 One_Story_1946_and_Newer_All_Styles
+	 One_Story_1945_and_Older
+	 One_Story_with_Finished_Attic_All_Ages
+	 One_and_Half_Story_Unfinished_All_Ages
+	 One_and_Half_Story_Finished_All_Ages
+	 Two_Story_1946_and_Newer
+	 Two_Story_1945_and_Older
+	 Two_and_Half_Story_All_Ages
+	 Split_or_Multilevel
+	 Split_Foyer
+	 Duplex_All_Styles_and_Ages
+	 One_Story_PUD_1946_and_Newer
+	 One_and_Half_Story_PUD_All_Ages
+	 Two_Story_PUD_1946_and_Newer
+	 PUD_Multilevel_Split_Level_Foyer
+	 Two_Family_conversion_All_Styles_and_Ages
+
+MS_Zoning (Nominal): Identifies the general zoning classification of the sale.
+		
+       A_agr	                   Agriculture
+       C_all	                   Commercial
+       Floating_Village_Residential	 Floating Village Residential
+       I_all	                   Industrial
+       Residential_High_Density	 Residential High Density
+       Residential_Low_Density	 Residential Low Density
+       Residential_Medium_Density	 Residential Medium Density
+	
+Lot_Frontage (Continuous): Linear feet of street connected to property
+
+	 value range: min: 0, max: 313
+
+Lot_Area (Continuous): Lot size in square feet
+
+	 value range: min: 1300, max: 215245
+
+Street (Nominal): Type of road access to property
+
+       Grvl	Gravel	
+       Pave	Paved
+       	
+Alley (Nominal): Type of alley access to property
+
+       Gravel
+       Paved
+       No_Alley_Access
+		
+Lot_Shape (Ordinal): General shape of property
+
+       Regular	
+       Slightly_Irregular
+       Moderately_Irregular
+       Irregular
+       
+Land_Contour (Ordinal): Flatness of the property
+
+       Lvl	Near Flat/Level	
+       Bnk	Banked - Quick and significant rise from street grade to building
+       HLS	Hillside - Significant slope from side to side
+       Low	Depression
+		
+Utilities (Ordinal): Type of utilities available
+		
+       AllPub  All public Utilities (E,G,W,& S)	
+       NoSewr  Electricity, Gas, and Water (Septic Tank)
+       NoSeWa  Electricity and Gas Only
+       ELO	   Electricity only	
+	
+Lot_Config (Nominal): Lot configuration
+
+       Inside   Inside lot
+       Corner   Corner lot
+       CulDSac  Cul-de-sac
+       FR2	    Frontage on 2 sides of property
+       FR3	    Frontage on 3 sides of property
+	
+Land_Slope (Ordinal): Slope of property
+		
+       Gtl	Gentle slope
+       Mod	Moderate Slope	
+       Sev	Severe Slope
+	
+Neighborhood (Nominal): Physical locations within Ames city limits (map available)
+
+       Bloomington_Heights
+       Blueste
+       Briardale
+       Brookside
+       Clear_Creek
+       College_Creek
+       Crawford
+       Edwards
+       Gilbert
+       Greens
+       Green_Hills
+       Iowa_DOT_and_Rail_Road
+       Landmark
+       Meadow_Village
+       Mitchell
+       North_Ames
+       Northridge
+       Northpark_Villa
+       Northridge_Heights
+       Northwest_Ames
+       Old_Town
+       South_and_West_of_Iowa_State_University
+       Sawyer
+       Sawyer_West
+       Somerset
+       Stone_Brook
+       Timberland
+       Veenker
+			
+Condition_1 (Nominal): Proximity to various conditions
+	
+       Artery  Adjacent to arterial street
+       Feedr   Adjacent to feeder street	
+       Norm	 Normal	
+       RRNn	 Within 200' of North-South Railroad
+       RRAn	 Adjacent to North-South Railroad
+       PosN	 Near positive off-site feature--park, greenbelt, etc.
+       PosA	 Adjacent to postive off-site feature
+       RRNe	 Within 200' of East-West Railroad
+       RRAe	 Adjacent to East-West Railroad
+	
+Condition_2 (Nominal): Proximity to various conditions (if more than one is present)
+		
+       Artery  Adjacent to arterial street
+       Feedr   Adjacent to feeder street	
+       Norm	 Normal	
+       RRNn	 Within 200' of North-South Railroad
+       RRAn	 Adjacent to North-South Railroad
+       PosN	 Near positive off-site feature--park, greenbelt, etc.
+       PosA	 Adjacent to postive off-site feature
+       RRAe	 Adjacent to East-West Railroad
+	
+Bldg_Type (Nominal): Type of dwelling
+		
+       OneFam    Single-family Detached	
+       TwoFmCon  Two-family Conversion; originally built as one-family dwelling
+       Duplex    Duplex
+       TwnhsE    Townhouse End Unit
+       Twnhs     Townhouse Inside Unit
+	
+House_Style (Nominal): Style of dwelling
+	
+       One_Story	       One story
+       One_and_Half_Fin	 One and one-half story: 2nd level finished
+       One_and_Half_Unf	 One and one-half story: 2nd level unfinished
+       Two_Story	       Two story
+       Two_and_Half_Fin	 Two and one-half story: 2nd level finished
+       Two_and_Half_Unf	 Two and one-half story: 2nd level unfinished
+       SFoyer	       Split Foyer
+       SLvl 	       Split Level
+	
+Overall_Qual (Ordinal): Rates the overall material and finish of the house
+
+       Very_Excellent
+       Excellent
+       Very_Good
+       Good
+       Above_Average
+       Average
+       Below_Average
+       Fair
+       Poor
+       Very_Poor
+	
+Overall_Cond (Ordinal): Rates the overall condition of the house
+
+       Very_Excellent
+       Excellent
+       Very_Good
+       Good
+       Above_Average
+       Average
+       Below_Average
+       Fair
+       Poor
+       Very_Poor
+		
+Year_Built (Time): Original construction date
+
+Year_Remod_Add (Time): Remodel date (same as construction date if no remodeling or additions)
+
+Roof_Style (Nominal): Type of roof
+
+       Flat	    Flat
+       Gable    Gable
+       Gambrel  Gabrel (Barn)
+       Hip	    Hip
+       Mansard  Mansard
+       Shed	    Shed
+		
+Roof_Matl (Nominal): Roof material
+
+       CompShg  Standard (Composite) Shingle
+       Membran  Membrane
+       Metal    Metal
+       Roll	    Roll
+       Tar&Grv  Gravel & Tar
+       WdShake  Wood Shakes
+       WdShngl  Wood Shingles
+		
+Exterior_1st (Nominal): Exterior covering on house
+
+       AsbShng  Asbestos Shingles
+       AsphShn  Asphalt Shingles
+       BrkComm  Brick Common
+       BrkFace  Brick Face
+       CBlock  Cinder Block
+       CemntBd  Cement Board
+       HdBoard  Hard Board
+       ImStucc  Imitation Stucco
+       MetalSd  Metal Siding
+       Other    Other
+       Plywood  Plywood
+       PreCast  PreCast	
+       Stone    Stone
+       Stucco   Stucco
+       VinylSd  Vinyl Siding
+       Wd Sdng  Wood Siding
+       WdShing  Wood Shingles
+	
+Exterior_2nd (Nominal): Exterior covering on house (if more than one material)
+
+       AsbShng	Asbestos Shingles
+       AsphShn	Asphalt Shingles
+       Brk Cmn	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       CemntBd	Cement Board
+       HdBoard	Hard Board
+       ImStucc	Imitation Stucco
+       MetalSd	Metal Siding
+       Other	Other
+       Plywood	Plywood
+       PreCast	PreCast
+       Stone	Stone
+       Stucco	Stucco
+       VinylSd	Vinyl Siding
+       Wd Sdng	Wood Siding
+       Wd Shng	Wood Shingles
+	
+Mas_Vnr_Type (Nominal): Masonry veneer type
+
+       BrkCmn   Brick Common
+       BrkFace  Brick Face
+       CBlock   Cinder Block
+       None     None
+       Stone    Stone
+	
+Mas_Vnr_Area (Continuous): Masonry veneer area in square feet
+
+       value range: min: 0, max: 1600
+
+Exter_Qual (Ordinal): Evaluates the quality of the material on the exterior 
+		
+       Excellent
+       Good
+       Typical
+       Fair
+       Poor
+		
+Exter_Cond (Ordinal): Evaluates the present condition of the material on the exterior
+		
+       Excellent
+       Good
+       Typical
+       Fair
+       Poor
+		
+Foundation (Nominal): Type of foundation
+		
+       BrkTil  Brick & Tile
+       CBlock  Cinder Block
+       PConc   Poured Contrete	
+       Slab	   Slab
+       Stone   Stone
+       Wood	   Wood
+		
+Bsmt_Qual (Ordinal): Evaluates the height of the basement
+
+       Excellent  Excellent (100+ inches)	
+       Good	      Good (90-99 inches)
+       Typical    Typical (80-89 inches)
+       Fair	      Fair (70-79 inches)
+       Poor	      Poor (<70 inches)
+       No_Basement  No Basement
+		
+Bsmt_Cond (Ordinal): Evaluates the general condition of the basement
+
+       Excellent	Excellent
+       Good	      Good
+       Typical	Typical - slight dampness allowed
+       Fair	      Fair - dampness or some cracking or settling
+       Poor	      Poor - Severe cracking, settling, or wetness
+       No_Basement  No Basement
+	
+Bsmt_Exposure (Ordinal): Refers to walkout or garden level walls
+
+       Gd	Good Exposure
+       Av	Average Exposure (split levels or foyers typically score average or above)	
+       Mn	Mimimum Exposure
+       No	No Exposure
+       No_Basement  No Basement
+	
+BsmtFin_Type_1 (Ordinal): Rating of basement finished area
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       No_Basement   No Basement
+		
+BsmtFin_SF_1 (Continuous): Type 1 finished square feet
+
+	 value range: min: 0, max: 2288
+
+BsmtFin_Type_2 (Ordinal): Rating of basement finished area (if multiple types)
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       No_Basement  No Basement
+
+BsmtFin_SF_2 (Continuous): Type 2 finished square feet
+
+	 value range: min: 0, max: 1526
+
+Bsmt_Unf_SF (Continuous): Unfinished square feet of basement area
+
+	 value range: min: 0, max: 2336
+
+Total_Bsmt_SF (Continuous): Total square feet of basement area
+
+	 value range: min: 0, max: 3206
+
+Heating (Nominal): Type of heating
+		
+       Floor  Floor Furnace
+       GasA	  Gas forced warm air furnace
+       GasW	  Gas hot water or steam heat
+       Grav	  Gravity furnace	
+       OthW	  Hot water or steam heat other than gas
+       Wall	  Wall furnace
+		
+Heating_QC (Ordinal): Heating quality and condition
+
+       Excellent
+       Good
+       Typical
+       Fair
+       Poor
+		
+Central_Air (Nominal): Central air conditioning
+
+       N	No
+       Y	Yes
+		
+Electrical (Ordinal): Electrical system
+
+       SBrkr  Standard Circuit Breakers & Romex
+       FuseA  Fuse Box over 60 AMP and all Romex wiring (Average)	
+       FuseF  60 AMP Fuse Box and mostly Romex wiring (Fair)
+       FuseP  60 AMP Fuse Box and mostly knob & tube wiring (poor)
+       Mix	  Mixed
+       Unknown	  Unknown
+		
+First_Flr_SF (Continuous): First Floor square feet
+
+	 value range: min: 334, max: 3820
+ 
+Second_Flr_SF (Continuous): Second floor square feet
+
+	 value range: min: 0, max: 1862
+
+Low_Qual_Fin_SF (Continuous): Low quality finished square feet (all floors)
+
+	 value range: min: 0, max: 1064
+
+Gr_Liv_Area (Continuous): Above grade (ground) living area square feet
+
+	 value range: min: 334, max: 3820
+
+Bsmt_Full_Bath (Discrete): Basement full bathrooms
+
+	 value range: min: 0, max: 3
+
+Bsmt_Half_Bath (Discrete): Basement half bathrooms
+
+	 value range: min: 0, max: 2
+
+Full_Bath (Discrete): Full bathrooms above grade
+
+	 value range: min: 0, max: 4
+
+Half_Bath (Discrete): Half baths above grade
+
+	 value range: min: 0, max: 2
+
+Bedroom_AbvGr (Discrete): Bedrooms above grade (does NOT include basement bedrooms)
+
+	 value range: min: 0, max: 8
+
+Kitchen_AbvGr (Discrete): Kitchens above grade
+
+	 value range: min: 0, max: 3
+
+Kitchen_Qual (Ordinal): Kitchen quality
+
+       Excellent
+       Good
+       Typical
+       Fair
+       Poor
+       	
+TotRms_AbvGrd (Discrete): Total rooms above grade (does not include bathrooms)
+
+	 value range: min: 2, max: 14
+
+Functional (Ordinal): Home functionality (Assume typical unless deductions are warranted)
+
+       Typ	 Typical Functionality
+       Min1	 Minor Deductions 1
+       Min2	 Minor Deductions 2
+       Mod	 Moderate Deductions
+       Maj1	 Major Deductions 1
+       Maj2	 Major Deductions 2
+       Sev	 Severely Damaged
+       Sal	 Salvage only
+		
+Fireplaces (Discrete): Number of fireplaces
+
+	 value range: min: 0, max: 4
+
+Fireplace_Qu (Ordinal): Fireplace quality
+
+       Excellent  Excellent - Exceptional Masonry Fireplace
+       Good	    Good - Masonry Fireplace in main level
+       Typical  Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement
+       Fair	    Fair - Prefabricated Fireplace in basement
+       Poor	    Poor - Ben Franklin Stove
+       No_Fireplace  No Fireplace
+		
+Garage_Type (Nominal): Garage location
+		
+       More_Than_Two_Types	More than one type of garage
+       Attchd	 Attached to home
+       Basment	 Basement Garage
+       BuiltIn	 Built-In (Garage part of house - typically has room above garage)
+       CarPort	 Car Port
+       Detchd	 Detached from home
+       No_Garage	 No Garage
+		
+Garage_Finish (Ordinal): Interior finish of the garage
+
+       Fin	 Finished
+       RFn	 Rough Finished	
+       Unf	 Unfinished
+       No_Garage	No Garage
+		
+Garage_Cars (Discrete): Size of garage in car capacity
+
+	 value range: min: 0, max: 5
+
+Garage_Area (Continuous): Size of garage in square feet
+
+	 value range: min: 0, max: 1488
+
+Garage_Qual (Ordinal): Garage quality
+
+       Excellent
+       Good
+       Typical
+       Fair
+       Poor
+       No_Garage
+		
+Garage_Cond (Ordinal): Garage condition
+
+       Excellent
+       Good
+       Typical
+       Fair
+       Poor
+       No_Garage
+		
+Paved_Drive (Ordinal): Paved driveway
+
+       Paved 
+       Partial_Pavement
+       Dirt_Gravel
+		
+Wood_Deck_SF (Continuous): Wood deck area in square feet
+
+	 value range: min: 0, max: 1424
+
+Open_Porch_SF (Continuous): Open porch area in square feet
+
+	 value range: min: 0, max: 742
+
+Enclosed_Porch (Continuous): Enclosed porch area in square feet
+
+	 value range: min: 0, max: 1012
+
+Three_season_porch (Continuous): Three season porch area in square feet
+
+	 value range: min: 0, max: 742
+
+Screen_Porch (Continuous): Screen porch area in square feet
+
+	 value range: min: 0, max: 508
+
+Pool_Area (Continuous): Pool area in square feet
+
+	 value range: min: 0, max: 800
+
+Pool_QC (Ordinal): Pool quality
+		
+       Excellent
+       Good
+       Typical
+       Fair
+       No_Pool
+		
+Fence (Ordinal): Fence quality
+		
+       Good_Privacy
+       Minimum_Privacy
+       Good_Wood
+       Minimum_Wood_Wire
+       No_Fence
+	
+Misc_Feature (Nominal): Miscellaneous feature not covered in other categories
+		
+       Gar2	 2nd Garage (if not described in garage section)
+       Othr	 Other
+       Shed	 Shed (over 100 SF)
+       TenC	 Tennis Court
+       None	 None
+		
+Misc_Val (Continuous): $Value of miscellaneous feature
+
+	 value range: min: 0, max: 15500
+
+Mo_Sold (Time): Month Sold (MM)
+
+Year_Sold (Time): Year Sold (YYYY)
+
+Sale_Type (Nominal): Type of sale
+		
+       WD 	  Warranty Deed - Conventional
+       CWD	  Warranty Deed - Cash
+       VWD	  Warranty Deed - VA Loan
+       New	  Home just constructed and sold
+       COD	  Court Officer Deed/Estate
+       Con	  Contract 15% Down payment regular terms
+       ConLw  Contract Low Down payment and low interest
+       ConLI  Contract Low Interest
+       ConLD  Contract Low Down
+       Oth	  Other
+		
+Sale_Condition (Nominal): Condition of sale
+
+       Normal   Normal Sale
+       Abnorml  Abnormal Sale -  trade, foreclosure, short sale
+       AdjLand  Adjoining Land Purchase
+       Alloca   Allocation - two linked properties with separate deeds, typically condo with a garage unit	
+       Family   Sale between family members
+       Partial  Home was not completed when last assessed (associated with New Homes)
+
+Longitude (Geospatial): Longitude of the house property
+
+Latitude (Geospatial): Latitude of the house property
+
+YrMo_Sold (Time) (New Added): Year and Month sold (YYYY-MM)
+
+Age_by_Sale (Continuous) (New Added): Age of the house by the time of sale
+
+       Year_Sold - Year_Built
+	 value range: min: 0, max: 136
+
+Remod_Age (Continuous) (New Added): Time between sale year and remodel year
+
+       Year_Sold - Year_Remod_Add
+	 value range: min: -1, max: 60
+
+Total_Bath (Discrete) (New Added): Total number of bathrooms of the house
+
+       Bsmt_Full_Bath + 0.5 * Bsmt_Half_Bath + Full_Bath + 0.5 * Half_Bath
+	 value range: min: 1, max: 7
+
+Total_Liv_Area (Continuous) (New Added): Total living area in square feet
+
+       Gr_Liv_Area + BsmtFin_SF_1 + BsmtFin_SF_2
+	 value range: min: 334, max: 5185
+
+Total_Flr_SF (Continuous) (New Added): Total area of all floors in square feet
+
+       Total_Bsmt_SF + First_Flr_SF + Second_Flr_SF
+	 value range: min: 334, max: 6428
+
+Total_Porch_SF (Continuous) (New Added): Total porch area in square feet
+
+       Open_Porch_SF + Enclosed_Porch + Three_season_porch + Screen_Porch
+	 value range: min: 0, max: 1207
+
+Has_Second_Flr (Nominal) (New Added): Whether or not a house has 2nd floor, created based on Second_Flr_SF
+
+       0	No
+       1	Yes
+
+Has_Bsmt (Nominal) (New Added): Whether or not a house has basement, created based on Total_Bsmt_SF
+
+       0	No
+       1	Yes
+
+Has_Garage (Nominal) (New Added): Whether or not a house has garage, created based on Garage_Area
+
+       0	No
+       1	Yes
+
+Has_MasVnr (Nominal) (New Added): Whether or not a house has masonry veneer, created based on Mas_Vnr_Area
+
+       0	No
+       1	Yes
+
+Has_Low_Qual_Fin (Nominal) (New Added): Whether or not a house has low quality finished area, created based on Low_Qual_Fin_SF
+
+       0	No
+       1	Yes
+
+Has_Wood_Deck (Nominal) (New Added): Whether or not a house has wood deck area, created based on Wood_Deck_SF
+
+       0	No
+       1	Yes
+
+Has_Porch (Nominal) (New Added): Whether or not a house has porch area, created based on Total_Porch_SF
+
+       0	No
+       1	Yes
+
+Has_Pool (Nominal) (New Added): Whether or not a house has pool, created based on Pool_Area
+
+       0	No
+       1	Yes
+
+SPECIAL NOTES:
+There are 5 observations that an instructor may wish to remove from the data set before giving it to students (a plot of SALE PRICE versus GR LIV AREA will indicate them quickly). Three of them are true outliers (Partial Sales that likely don’t represent actual market values) and two of them are simply unusual sales (very large houses priced relatively appropriately). I would recommend removing any houses with more than 4000 square feet from the data set (which eliminates these 5 unusual observations) before assigning it to students.
+
+STORY BEHIND THE DATA:
+This data set was constructed for the purpose of an end of semester project for an undergraduate regression course. The original data (obtained directly from the Ames Assessor’s Office) is used for tax assessment purposes but lends itself directly to the prediction of home selling prices. The type of information contained in the data is similar to what a typical home buyer would want to know before making a purchase and students should find most variables straightforward and understandable.
+
+PEDAGOGICAL NOTES:
+Instructors unfamiliar with multiple regression may wish to use this data set in conjunction with an earlier JSE paper that reviews most of the major issues found in regression modeling: 
+
+Kuiper , S. (2008), “Introduction to Multiple Regression: How Much Is Your Car Worth?”, Journal of Statistics Education Volume 16, Number 3 (2008).
+
+Outside of the general issues associated with multiple regression discussed in this article, this particular data set offers several opportunities to discuss how the purpose of a model might affect the type of modeling done. User of this data may also want to review another JSE article related directly to real estate pricing:
+
+Pardoe , I. (2008), “Modeling home prices using realtor data”, Journal of Statistics Education Volume 16, Number 2 (2008).
+
+One issue is in regards to homoscedasticity and assumption violations. The graph included in the article appears to indicate heteroscedasticity with variation increasing with sale price and this problem is evident in many simple home pricing models that focus only on house and lot sizes. Though this violation can be alleviated by transforming the response variable (sale price), the resulting equation yields difficult to interpret fitted values (selling price in log or square root dollars). This situation gives the instructor the opportunity to talk about the costs (biased estimators, incorrect statistical tests, etc.) and benefits (ease of use) of not correcting this assumption violation. If the purpose in building the model is simply to allow a typical buyer or real estate agent to sit down and estimate the selling price of a house, such transformations may be unnecessary or inappropriate for the task at hand. This issue could also open into a discussion on the contrasts and comparisons between data mining, predictive models, and formal statistical inference.
+
+A second issue closely related to the intended use of the model, is the handling of outliers and unusual observations. In general, I instruct my students to never throw away data points simply because they do not match a priori expectations (or other data points). I strongly make this point in the situation where data are being analyzed for research purposes that will be shared with a larger audience. Alternatively, if the purpose is to once again create a common use model to estimate a “typical” sale, it is in the modeler’s best interest to remove any observations that do not seem typical (such as foreclosures or family sales).
+
+REFERENCES:
+Individual homes within the data set can be referenced directly from the Ames City Assessor webpage via the Parcel ID (PID) found in the data set. Note these are nominal values (non-numeric) so preceding 0’s must be included in the data entry field on the website. Access to the database can be gained from the Ames site (http://www.cityofames.org/assessor/) by clicking on “property search” or by accessing the Beacon (http://beacon.schneidercorp.com/Default.aspx) website and inputting Iowa and Ames in the appropriate fields. A city map showing the location of all the neighborhoods is also available on the Ames site and can be accessed by clicking on “Maps”  and then “Residential Assessment Neighborhoods (City of Ames Only)”.
+
+SUBMITTED BY:
+Dean De Cock
+Truman State University
+100 E. Normal St., Kirksville, MO, 63501
+decock@truman.edu
+
