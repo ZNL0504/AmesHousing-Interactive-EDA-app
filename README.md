@@ -16,3 +16,10 @@ In summary, the project provides a data story telling platform, and the dashboar
 The image below depicts the outline and workflow of the whole project, as well as the basic components of the dashboard structure.
 
 <img src="dataset_download_and_EDA/images_dashboard/Picture10_3.png" width="900"/>
+
+## Dashboard Screenshots
+<img src="dashboard_screenshot/screenshot_1.png" width="450"/>   <img src="dashboard_screenshot/screenshot_2.png" width="450"/>
+<img src="dashboard_screenshot/screenshot_3.png" width="450"/>   <img src="dashboard_screenshot/screenshot_4.png" width="450"/>
+<img src="dashboard_screenshot/screenshot_5.png" width="450"/>   <img src="dashboard_screenshot/screenshot_6.png" width="450"/>
+<img src="dashboard_screenshot/screenshot_7.png" width="450"/>   <img src="dashboard_screenshot/screenshot_8.png" width="450"/>
+<img src="dashboard_screenshot/screenshot_9.png" width="450"/>   <img src="dashboard_screenshot/screenshot_10.png" width="450"/>
