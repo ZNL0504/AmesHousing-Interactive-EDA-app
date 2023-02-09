@@ -2,7 +2,7 @@
 <img src="dataset_download_and_EDA/images_dashboard/db-screenshot_00.png" height="50"/>   
 This GitHub repository is for the source code of a data analysis dashboard with Dash Plotly:   
 
-**[House Sale Evaluation -- Interactive Data Visualization & Analysis with AmesHousing Dataset](https://ameshousing-interactive-eda-app.onrender.com)** (click to open the dashboard).  
+**[House Sale Evaluation -- Interactive Data Visualization & Analysis with AmesHousing Dataset](https://ameshousing-interactive-eda-app.onrender.com/)** (click to open the dashboard).  
 
 This dashboard is an extension of data science project: **[House Price Prediction – Comprehensive Data Science Project](https://github.com/ZNL0504/House-Price-Prediction)**.   
 The goal of this dashboard is to interactively visualize data, interpret analytical results, and extract data insights in a very flexible and intuitive approach.  
